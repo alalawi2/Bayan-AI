@@ -143,25 +143,24 @@ function TypedText({ words }: { words: string[] }) {
   return <span className="typed">{text}<span className="cursor">|</span></span>
 }
 
-/* ── Brand Mark (from Codex) ── */
+/* ── Brand Mark (Circle Pulse) ── */
 function BrandMark({ compact }: { compact?: boolean }) {
   return (
-    <svg className={compact ? 'brand-mark compact' : 'brand-mark'} viewBox="0 0 72 72">
+    <svg className={compact ? 'brand-mark compact' : 'brand-mark'} viewBox="0 0 512 512">
       <defs>
-        <linearGradient id="bs" x1="8" y1="8" x2="64" y2="64" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#16324b" /><stop offset="1" stopColor="#0b1c2d" />
+        <linearGradient id="bs" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#1e3a5f" /><stop offset="1" stopColor="#0b1c2d" />
         </linearGradient>
-        <linearGradient id="bl" x1="20" y1="18" x2="56" y2="54" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#d8fff9" /><stop offset="1" stopColor="#7de2d1" />
+        <linearGradient id="bl" x1="160" y1="140" x2="360" y2="380" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#99f6e4" /><stop offset="1" stopColor="#0d9488" />
         </linearGradient>
       </defs>
-      <rect x="6" y="6" width="60" height="60" rx="20" fill="url(#bs)" />
-      <rect x="6.5" y="6.5" width="59" height="59" rx="19.5" stroke="rgba(255,255,255,0.08)" />
-      <path d="M24 18H39.5C47.1 18 51.5 22.1 51.5 28C51.5 33.7 47.1 36 40 36H24" fill="none" stroke="url(#bl)" strokeLinecap="round" strokeWidth="4" />
-      <path d="M24 36H40.5C48.2 36 52.7 40.1 52.7 46.2C52.7 52.2 48.1 54 39 54H24" fill="none" stroke="url(#bl)" strokeLinecap="round" strokeWidth="4" />
-      <path d="M24 18V54" fill="none" stroke="url(#bl)" strokeLinecap="round" strokeWidth="4" />
-      <circle cx="51.5" cy="28" r="4.8" fill="#f4b866" />
-      <circle cx="52.7" cy="46.2" r="4.8" fill="#7de2d1" />
+      <circle cx="256" cy="256" r="240" fill="url(#bs)" />
+      <circle cx="256" cy="256" r="200" fill="none" stroke="#0d9488" strokeWidth="1.5" opacity="0.15" />
+      <circle cx="256" cy="256" r="160" fill="none" stroke="#0d9488" strokeWidth="1.5" opacity="0.1" />
+      <polyline points="80,256 180,256 210,180 240,340 270,200 300,256 420,256" fill="none" stroke="#0d9488" strokeWidth="4" opacity="0.2" strokeLinecap="round" strokeLinejoin="round" />
+      <text x="256" y="310" textAnchor="middle" fontFamily="system-ui,sans-serif" fontWeight="800" fontSize="200" fill="url(#bl)">B</text>
+      <circle cx="380" cy="160" r="14" fill="#f4b866" />
     </svg>
   )
 }
