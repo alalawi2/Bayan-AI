@@ -435,9 +435,9 @@ export default function App() {
               <h2>Partner With Us</h2>
               <p className="muted">Investors, institutions, and collaborators — let's build the future of healthcare AI together.</p>
               <div className="contact-row">
-                <a href="mailto:dr.abdullahalalawi@gmail.com" className="contact-item">
+                <a href="mailto:info@bayanai.tech" className="contact-item">
                   <span className="contact-label">Email</span>
-                  <span>dr.abdullahalalawi@gmail.com</span>
+                  <span>info@bayanai.tech</span>
                 </a>
                 <div className="contact-item">
                   <span className="contact-label">Location</span>
